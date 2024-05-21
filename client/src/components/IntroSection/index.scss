@@ -1,0 +1,44 @@
+.bg1 {
+    background-image: url("https://coppola.qodeinteractive.com/wp-content/uploads/2021/11/h4-rev-img1.jpg");
+  }
+  
+  .bg2 {
+    background-image: url("https://coppola.qodeinteractive.com/wp-content/uploads/2021/11/h4-rev-img2.jpg");
+  }
+  
+  .bg3 {
+    background-image: url("https://coppola.qodeinteractive.com/wp-content/uploads/2021/11/h4-rev-img3.jpg");
+  }
+  
+  .bg4 {
+    background-image: url("https://coppola.qodeinteractive.com/wp-content/uploads/2021/11/h4-rev-img4.jpg");
+  }
+  
+  /* change the size of the bullet and active color */
+  
+  .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    margin-top: 30px;
+    .swiper-pagination-bullet {
+      background-color: white;
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+  
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #fff;
+      }
+    }
+  }
+  .swiper-pagination-horizontal {
+    bottom: 50% !important;
+    left: 94% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20px !important;
+  }
+  

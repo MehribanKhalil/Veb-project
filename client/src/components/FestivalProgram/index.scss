@@ -1,0 +1,16 @@
+.program_section{
+    padding: 50px 0;
+    background-color: #EDEDED;
+    .program_section_title{
+        font-size: 1.2rem;
+    }
+    .program_section_content{
+        margin: 90px 0 20px;
+    }
+    .program_section_view_all{
+        text-align: end;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+    }
+}

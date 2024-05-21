@@ -1,0 +1,73 @@
+.audience_section{
+    background-image: url('https://coppola.qodeinteractive.com/wp-content/uploads/2021/11/h4-bg-img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 0 150px;
+
+    .audience_section_title{
+        color: #fff;
+        font-size: 1.2rem;
+        padding-left: 12px;
+    }
+
+    .audience_section_title_content{
+        padding-top: 90px;
+
+        .audience_left{
+            .audience_video{
+                max-width: 100%;
+            }
+        }
+
+        .audience_right{
+            color: #EF9797;
+            padding-left: 90px;
+            h4{
+                font-size: 1.1rem;
+            }
+            h2{
+                font-size: clamp(1.5625rem, 1rem + 2.8125vw, 3.25rem);
+                padding: 10px 0 20px;
+            }
+
+            .audience_right_icons{
+                margin: 40px 0;
+                img{
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        .audience_right{
+            padding-left: 10px !important;
+        }
+    }
+
+    @media screen and (max-width:992px) {
+        padding: 60px 0 70px;
+        .audience_section_title_content{
+            padding-top: 60px;
+            
+            .audience_left{
+                padding-bottom: 50px;
+                
+            }
+    
+            
+        }
+    }
+    
+      @media screen and (max-width:768px) {
+        .audience_right{
+            .audience_right_icons{
+                margin: 40px 0;
+                img{
+                    padding-right: 17px !important;
+                }
+            }
+        }
+      }
+}

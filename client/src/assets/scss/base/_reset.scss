@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+body{
+    font-family: $DMsans;
+}
+
+img{
+    max-width: 100%;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}

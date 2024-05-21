@@ -1,0 +1,58 @@
+.magazine_container{
+    .magazine_left{
+        padding: 70px 60px;
+        .magazine_title{
+            font-size: 1.2rem;
+        }
+        .magazine_title_producers{
+            font-weight: 700;
+            color: #959494;
+            font-size: 0.8rem;
+            padding: 10px 0 20px;
+            cursor: pointer;
+
+            span{
+                background-color: #d2cab9;
+                color: #000;
+                margin-right: 8px;
+                &:hover{
+                    background-color: #eaa57f;
+                    transition: all .4s ease;
+                }
+            }   
+        }
+
+        .magazine_text{
+            font-size: clamp(1.5rem, 1.08rem + 2.1vw, 2.76rem);
+            padding: 20px 0;
+            color: #000;
+        }
+
+        p{
+            font-size: 1.1rem;
+
+        }
+
+        .magazine_btn{
+            padding-top: 60px;
+        }
+
+    }
+
+    .magazine_right{
+        overflow: hidden;
+        transition: all .6s ease;
+
+        img{
+            transition: all .6s ease;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        
+    }
+    
+}

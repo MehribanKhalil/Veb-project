@@ -1,0 +1,126 @@
+.mobile_nav {
+  display: none;
+  background-color: #000;
+  position: relative;
+  .mobile_nav_content {
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mobile_nav_logo {
+      width: 120px;
+    }
+
+    .navbar_toggle_btn {
+      padding: 20px 0;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      &:hover {
+        .nav_btn_line1 {
+          transform: scaleX(0.7);
+          transition: all 0.5 s ease;
+        }
+
+        .nav_btn_line2 {
+          transform: scaleX(1);
+          transition: all 0.5s ease;
+        }
+      }
+
+      .nav_btn_line1 {
+        height: 2px;
+        width: 40px;
+        background-color: #fff;
+        margin-bottom: 7px;
+        transform: scaleX(1);
+        transition: all 0.5s ease;
+        transform-origin: right;
+      }
+      .nav_btn_line2 {
+        height: 2px;
+        width: 40px;
+        background-color: #fff;
+        transform: scaleX(0.7);
+        transition: all 0.5s ease;
+        transform-origin: right;
+      }
+
+      &.open_btn {
+        .nav_btn_line2 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .mobile_nav_menu {
+    color: #fff;
+    background: #000;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+    height: auto;
+    padding: 34px 7%;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: all 0.4s;
+    // transform: translateY(-20px);
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: scaleX(1);
+        // max-height: 100%;
+        transition: all 0.4s;
+      }
+      .mobile_menu_list {
+        .mobile_menu_list_item {
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          font-weight: 500;
+          padding-bottom: 15px;
+        position: relative;
+
+          &.side_bar_list_item_active{
+            .mobile_menu_dropdown{
+                visibility: visible;
+                opacity: 1;
+                transition: all 0.5s ease;
+                transform-origin: top center;
+                max-height: 100%;
+                transform: scaleY(1);
+                transform: translateY(0);
+            }
+          }
+          .mobile_menu_dropdown{
+                  margin: 0;
+                  padding: 0;
+                  visibility: hidden;
+                  opacity: 0;
+                    max-height: 0;
+                  transform: scaleY(0);
+                  transform-origin: top center;
+                  transform: translateY(-20px);
+                  .side_dropdown_item {
+                    text-transform: capitalize;
+                    font-size: 0.9rem;
+                    padding-bottom: 10px;
+                    a {
+                      transition: all 0.5s ease;
+                    }
+                  
+                }
+          }
+        }
+      
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+}

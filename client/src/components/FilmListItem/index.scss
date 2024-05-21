@@ -1,0 +1,40 @@
+.list_item {
+  border-collapse: collapse;
+  border-bottom: 1px solid #959494;
+  margin-bottom: 30px;
+  color: #000;
+
+  .listItem_name {
+    border-left: 1px solid #959494;
+    border-right: 1px solid #959494;
+    font-size: clamp(1.3rem, 1.1667rem + 0.6667vw, 1.7rem) !important;
+    text-transform: uppercase;
+  }
+
+  .listItem_time {
+    border-right: 1px solid #959494;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px;
+  }
+
+  @media screen and (max-width:992px) {
+    padding-bottom: 30px;
+    .item {
+      padding: 5px;
+      min-height: 40px;
+    }
+    .listItem_name,.listItem_time{
+      border: none;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    
+  }
+}

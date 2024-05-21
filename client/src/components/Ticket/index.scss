@@ -1,0 +1,48 @@
+.ticket_content {
+  background-color: #d2cab9;
+margin-bottom: 18px;
+  .ticket_left {
+    padding: 39px 20px 39px 34px;
+    border-right: 1px dashed #949595;
+    .ticket_title {
+      font-size: 25px;
+    }
+    .ticket_info {
+      padding: 30px 0;
+      font-size: 18px;
+    }
+
+    .additional_info {
+      border-top: 1px solid #949595;
+      padding-top: 10px;
+    }
+  }
+
+  .ticket_right {
+    position: relative;
+    padding: 39px 20px 39px 34px;
+
+    .circle {
+      background-color: #eaa57f;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 15px;
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+    }
+
+    .ticket_buy{
+      position: absolute;
+      border-top: 1px solid #949595;
+        padding-top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 60px;
+    }
+  }
+}
+
+

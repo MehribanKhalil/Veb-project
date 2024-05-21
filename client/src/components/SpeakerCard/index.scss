@@ -1,0 +1,64 @@
+.speaker_card {
+  .speaker_card_content {
+    position: relative;
+
+    .speaker_card_overlay {
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      &:hover{
+        .speaker_socials {
+            .speaker_social_icon{
+                visibility: visible;
+                opacity: 1;
+                transform: translateX(0);
+                transition: all .5s ease;
+            }
+          }
+    }
+    .speaker_socials {
+        display: flex;
+        gap: 10px;
+        font-size: 1.3rem;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        .speaker_social_icon{
+            cursor: pointer;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(20px);
+            &:hover{
+                color:#eaa57f;
+                transition: all 0.4s ease;
+            }
+        }
+      }
+
+      .speaker_name {
+        font-size: 25px;
+        position: absolute;
+        bottom: 55px;
+        left: 35px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          color: #fdf24e;
+          transition: all .4s ease;
+        }
+      }
+      .speaker_position {
+        position: absolute;
+        bottom: 30px;
+        left: 35px;
+        font-size: 18px;
+      }
+    }
+  }
+
+ 
+}

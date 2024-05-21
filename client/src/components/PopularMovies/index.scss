@@ -1,0 +1,43 @@
+.popular_movies {
+  background-color: #000;
+  color: #fff;
+  padding: 70px 0 100px;
+
+  .popular_movies_title {
+    font-size: 1.2rem;
+    padding-left: 12px;
+  }
+
+  .popular_movies_categories {
+    ul {
+      display: flex;
+      justify-content: end;
+      gap: 20px;
+      margin-bottom: 30px;
+      .category_item {
+        border-left: 1px solid #959494;
+        
+        padding-left: 20px;
+        button{
+            border: none;
+            outline: none;
+            background: none;
+            color: #959494;
+            &:hover{
+                color: #fff;
+                transition: all .3s ease;
+            }
+
+            &.active_category_item {
+                color: #fff;
+            }
+        }
+       
+      }
+      .category_last_item {
+        border-right: 1px solid #959494;
+        padding-right: 20px;
+      }
+    }
+  }
+}
